@@ -1,0 +1,35 @@
+#container{
+	background: url("resources/images/piano.png");
+	width: 702px;
+    height: 502px;
+    margin: 0 auto;
+    z-index: 0;
+    background-color: white;
+}
+.key{
+	position: relative;
+	left: 50px;
+    top: 69px;
+	height: 380px;
+    width: 125px;
+    display: inline-block;
+    float: left;
+    margin-right: -25px;
+    z-index: -2;
+   
+}
+
+.key_fix{
+	margin-left: -10px;
+}
+
+.select_key{
+	z-index: 2!important;
+}
+
+/*.key>img{
+	 display: block;
+}
+.key>img:active{
+	display: none;
+}*/
