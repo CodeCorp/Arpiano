@@ -22,10 +22,10 @@ serialport.on('open', function(){
 		serialport.on('data', function(data){
 			var key = data.toString();
 			console.log(key);
-			if(lastValue !== key){
+			// if(lastValue !== key){
 				socket.emit('data', key);
-			}
-			lastValue = key;
+			// }
+			// lastValue = key;
 		});
 	});
 });

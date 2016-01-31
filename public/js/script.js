@@ -1,11 +1,10 @@
 var socket = io.connect();
-var dialogue = document.getElementById('dialogue');
-var box = document.getElementById('angle');
 
 function pressKey(keyNo) {
 	if (keyNo>0 && keyNo <8) {
-		
+		$('#key-status p').html("Key Pressed : "+keyNo);
 		$('#key-'+keyNo).addClass('select_key');
+		$('#music-notes').css('visibility','visible');
 		var sound = new Howl({
 	 	urls: ['resources/sounds/sound-'+keyNo+'.wav'],
 	  	autoplay: true,
@@ -13,6 +12,7 @@ function pressKey(keyNo) {
 	  	volume: 1,
 	  	onend: function() {
 	    		$('#key-'+keyNo).removeClass('select_key');
+	    		$('#music-notes').css('visibility','hidden');
  	 		}
 		});
 	};
@@ -20,13 +20,13 @@ function pressKey(keyNo) {
 }
 
 socket.on('connected', function(){
-	dialogue.innerHTML = "Socket Connected";
+	$('#socket-status p').html("Socket Connected");
 });
 socket.on('disconnect', function(){
-	dialogue.innerHTML = "Socket Disconnected";
+	$('#socket-status p').html("Socket Disonnected");
 });
 socket.on('data', function (data) {
-	box.innerHTML = data;
+	
 	// console.log(data)
 	pressKey(data);
 });
