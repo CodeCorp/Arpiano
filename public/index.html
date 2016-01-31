@@ -1,20 +1,40 @@
 <html>
 <head>
-	<title></title>
-	
+	<title>Arpiano</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
+<!--
 	<h1 id="dialogue"></h1>
 	<h1 id="angle"></h1>
-	<div id="container">
-		<div id="key-1" class="key"><img src="resources/images/piano_left.png"></div>
-		<div id="key-2" class="key"><img src="resources/images/piano_up.png"></div>
-		<div id="key-3" class="key "><img src="resources/images/piano_right.png"></div>
-		<div id="key-4" class="key key_fix"><img src="resources/images/piano_down.png"></div>
-		<div id="key-5" class="key key_fix"><img src="resources/images/piano_space.png"></div>
-		<div id="key-6" class="key key_fix"><img src="resources/images/piano_click.png"></div>
+-->
+     <nav class="navbar navbar-inverse navbar-fixed-top" id="top-nav">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Arpiano</a>
+        </div>
+    </nav>
+    <div id="container">
+    	<div id="key-container">
+			<div id="key-1" class="key"><img src="resources/images/piano_key_1.png"></div>
+			<div id="key-2" class="key"><img src="resources/images/piano_key_2.png"></div>
+			<div id="key-3" class="key "><img src="resources/images/piano_key_3.png"></div>
+			<div id="key-4" class="key key_fix"><img src="resources/images/piano_key_4.png"></div>
+			<div id="key-5" class="key key_fix" style="position:relative;left:-10px;"><img src="resources/images/piano_key_5.png"></div>
+			<div id="key-6" class="key key_fix" style="position:relative;left:-10px;"><img src="resources/images/piano_key_6.png"></div>
+	        <div id="key-7" class="key"><img src="resources/images/piano_key_7.png"></div>
+		</div>
+		<div id="bottom-div">
+			<div id="music-notes">
+				<!-- <img src="resources/images/music-playing.gif"> -->
+			</div>
+			<h1>AAAAAAA</h1>
+		</div>
+    </div>
+	<div id="footer">
+		<a id="footer-text" href="https://github.com/CodeCorp" target="_blank">Powered By CodeCorp</a>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>

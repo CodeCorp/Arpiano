@@ -3,7 +3,7 @@ var dialogue = document.getElementById('dialogue');
 var box = document.getElementById('angle');
 
 function pressKey(keyNo) {
-	if (keyNo>0 && keyNo <7) {
+	if (keyNo>0 && keyNo <8) {
 		
 		$('#key-'+keyNo).addClass('select_key');
 		var sound = new Howl({
