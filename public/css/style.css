@@ -3,10 +3,8 @@
     /*margin-bottom: 500px;*/
 }
 
-
-
 #key-container{
-	background: url("resources/images/piano.png");
+	background: url("../resources/images/piano.png");
 	width: 983;
     height: 504px;
     margin: 0 auto;

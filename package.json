@@ -1,17 +1,24 @@
 {
-  "name": "Arpiano",
+  "name": "arpiano",
   "version": "0.0.0",
-  "description": "",
+  "description": "An arduino powered piano",
   "main": "app.js",
-  "dependencies": {
-    "express": "^4.1.0",
-    "serialport": "^1.3.1",
-    "socket.io": "^0.9.16"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "scripts" :{
-    "start" : "node app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeCorp/Arpiano.git"
   },
-  "devDependencies": {},
-  "author": "Rohan Goel <rohangoel0296@gmail.com>",
-  "license": "ISC"
+  "author": "CodeCorp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeCorp/Arpiano/issues"
+  },
+  "homepage": "https://github.com/CodeCorp/Arpiano#readme",
+  "devDependencies": {
+    "express": "^4.13.4",
+    "serialport": "^2.0.6",
+    "socket.io": "^1.4.5"
+  }
 }
