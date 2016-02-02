@@ -41,7 +41,7 @@
 #music-notes{
     margin: 0 auto;
     width: 1100px;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 #music-notes img{
@@ -51,7 +51,7 @@
 }
 
 #status-wrapper{
-    background-color: #dadada;
+    background-color: #ccc;
     font-family: sans-serif;
     color: #fff;
     font-size: 16px;

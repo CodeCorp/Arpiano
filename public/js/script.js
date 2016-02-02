@@ -1,10 +1,17 @@
+$(document).keypress(function(key) {
+    keyNo = key.which -48;
+    if (keyNo>0 && keyNo<8){
+    	pressKey(keyNo);
+    };
+});
+
 var socket = io.connect();
 
 function pressKey(keyNo) {
 	if (keyNo>0 && keyNo <8) {
 		$('#key-status p').html("Key Pressed : "+keyNo);
 		$('#key-'+keyNo).addClass('select_key');
-		$('#music-notes').css('visibility','visible');
+		$('#music-notes img').prop('src','resources/images/music-playing.gif')
 		var sound = new Howl({
 	 	urls: ['resources/sounds/sound-'+keyNo+'.wav'],
 	  	autoplay: true,
@@ -12,7 +19,7 @@ function pressKey(keyNo) {
 	  	volume: 1,
 	  	onend: function() {
 	    		$('#key-'+keyNo).removeClass('select_key');
-	    		$('#music-notes').css('visibility','hidden');
+	    		$('#music-notes img').prop('src','resources/images/music-not-playing.gif')
  	 		}
 		});
 	};
@@ -30,3 +37,4 @@ socket.on('data', function (data) {
 	// console.log(data)
 	pressKey(data);
 });
+
