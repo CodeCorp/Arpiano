@@ -13,7 +13,7 @@ function pressKey(keyNo) {
 		$('#key-'+keyNo).addClass('select_key');
 		$('#music-notes img').prop('src','resources/images/music-playing.gif')
 		var sound = new Howl({
-	 	urls: ['resources/sounds/sound-'+keyNo+'.wav'],
+	 	urls: ['resources/sounds/sound'+keyNo+'.mp3'],
 	  	autoplay: true,
 	  	loop: false,
 	  	volume: 1,
