@@ -26,6 +26,9 @@ npm install
 node app.js
 ```
 
+For any problems with port while running `node app.js` try the command with `sudo`
+
+
 ##Circuit Diagram
 ![Screenshot](http://i65.tinypic.com/fp7x2.jpg "Circuit diagram for 1 piano key")
 
